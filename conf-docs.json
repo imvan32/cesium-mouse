@@ -1,0 +1,13 @@
+{
+    "source": {
+        "include": ["src"]
+    },
+    "plugins": [
+        "linkCesium"
+    ],
+    "opts": {
+        "destination": "docs",
+        "recurse": true,
+        "private": true
+    }
+}

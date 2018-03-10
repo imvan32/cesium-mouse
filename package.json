@@ -1,0 +1,48 @@
+{
+  "name": "cesium-mouse",
+  "version": "1.0.4",
+  "description": "Предоставляет удобное API для подписки на события мыши в Cesium",
+  "main": "lib/index.js",
+  "scripts": {
+    "docs": "./node_modules/.bin/jsdoc --configure conf-docs.json",
+    "babel": "npx babel src --out-dir lib",
+    "build:umd": "webpack src/index.js dist/cesium-mouse.min.js --config ./webpack.config.js",
+    "test-unit": "jest spec/unit/.*\\.spec.js?$",
+    "test-integration": "jest spec/integration/.*\\.spec.js?$"
+  },
+  "keywords": [
+    "cesium",
+    "mouse",
+    "ScreenSpaceEventHandler"
+  ],
+  "jest": {
+    "setupFiles": [
+      "./setupJest"
+    ]
+  },
+  "author": "imvan32",
+  "license": "MIT",
+  "peerDependencies": {
+    "cesium": "^1.34.0"
+  },
+  "dependencies": {
+    "eventemitter3": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^4.1.6",
+    "babel-jest": "^22.2.2",
+    "babel-loader": "^7.1.3",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.12.1",
+    "jasmine-core": "^3.0.0",
+    "jest": "^22.3.0",
+    "jsdoc": "^3.4.3",
+    "jsdom": "^11.6.2",
+    "webpack": "^3.11.0"
+  }
+}
