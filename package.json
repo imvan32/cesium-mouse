@@ -1,7 +1,9 @@
 {
   "name": "cesium-mouse",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple api for adding mouse handlers for Cesium",
+  "license": "MIT",
+  "author": "imvan32",
   "main": "lib/index.js",
   "scripts": {
     "docs": "./node_modules/.bin/jsdoc --configure conf-docs.json",
@@ -15,13 +17,15 @@
     "mouse",
     "ScreenSpaceEventHandler"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imvan32/cesium-mouse"
+  },
   "jest": {
     "setupFiles": [
       "./setupJest"
     ]
   },
-  "author": "imvan32",
-  "license": "MIT",
   "peerDependencies": {
     "cesium": "^1.34.0"
   },
