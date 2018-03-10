@@ -1,6 +1,10 @@
 # cesium-mouse
 Simple api for adding mouse handlers for Cesium.
 
+## Dependencies
+
+[EventEmitter3](https://github.com/primus/eventemitter3)
+
 ## Install
 
 ```bash
