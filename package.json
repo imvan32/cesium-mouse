@@ -1,7 +1,7 @@
 {
   "name": "cesium-mouse",
   "version": "1.0.4",
-  "description": "Предоставляет удобное API для подписки на события мыши в Cesium",
+  "description": "Simple api for adding mouse handlers for Cesium",
   "main": "lib/index.js",
   "scripts": {
     "docs": "./node_modules/.bin/jsdoc --configure conf-docs.json",
