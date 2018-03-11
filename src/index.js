@@ -115,7 +115,7 @@ Mouse.prototype = Object.assign(Object.create(EventEmitter.prototype), {
 
 			this._onEvent(formatEventType(eventType), event);
 
-		}, eventType);
+		}, ScreenSpaceEventType[eventType]);
 
 	},
 	/**
@@ -248,4 +248,5 @@ Mouse.prototype = Object.assign(Object.create(EventEmitter.prototype), {
 
 });
 
-export default Mouse;
+module.exports = Mouse;
+
