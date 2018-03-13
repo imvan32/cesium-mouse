@@ -39,7 +39,7 @@ CesiumMouse.mixinEventsMethods(entity);
 entity.interactable = true;
 entity.on('leftdown', function(event) { console.log('entity event', event); });
 ```
-
+Now you can control the event calling, pointing 'interactable' = false.
 List of mouse events name:
 * leftdown
 * leftclick
@@ -55,8 +55,7 @@ List of mouse events name:
 * mousemove
 * mouseover. on the Entity
 * mouseout. on the Entity
-
-Now you can control the event calling, pointing 'interactable' = false. Also you can subscribe on your own events and call it in any place.
+Also you can subscribe on your own events and call it in any place.
 
 ```js
 entity.on('myownevent', function(event) { console.log('my own event', event); });
