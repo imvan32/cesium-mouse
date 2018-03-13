@@ -40,6 +40,7 @@ entity.interactable = true;
 entity.on('leftdown', function(event) { console.log('entity event', event); });
 ```
 Now you can control the event calling, pointing 'interactable' = false.
+
 List of mouse events name:
 * leftdown
 * leftclick
@@ -55,6 +56,7 @@ List of mouse events name:
 * mousemove
 * mouseover. on the Entity
 * mouseout. on the Entity
+
 Also you can subscribe on your own events and call it in any place.
 
 ```js
