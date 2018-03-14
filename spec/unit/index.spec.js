@@ -21,15 +21,15 @@ const createMouse = () => new CesiumMouse({
 
 describe('Unit test', () => {
 
-	describe('formatEventType', () => {
+	// describe('formatEventType', () => {
 
-		it('check LEFT_DOWN', () => {
+	// 	it('check LEFT_DOWN', () => {
 
-			expect(formatEventType('LEFT_DOWN')).toBe('leftdown');
+	// 		expect(formatEventType('LEFT_DOWN')).toBe('leftdown');
 
-		});
+	// 	});
 
-	});
+	// });
 	describe('static methods', () => {
 
 		it('mixinEventsMethods', () => {
@@ -57,7 +57,6 @@ describe('Unit test', () => {
 			const spy = jest.spyOn(CesiumMouse.prototype, '_addEvent');
 
 			const mouse = createMouse();
-
 			eventTypes.forEach((eventType, index) => {
 
 				expect(spy.mock.calls[index][0]).toBe(eventType);
@@ -76,8 +75,8 @@ describe('Unit test', () => {
 
 			eventTypes.forEach((eventType, index) => {
 
-				expect(spy.mock.calls[index][1]).toBe(eventType);
-				expect(mouse.handler._inputEvents[eventType]).toBeDefined();
+				expect(spy.mock.calls[index][1]).toBe(ScreenSpaceEventType[eventType]);
+				expect(mouse.handler._inputEvents[ScreenSpaceEventType[eventType]]).toBeDefined();
 
 			});
 

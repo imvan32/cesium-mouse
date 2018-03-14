@@ -5,7 +5,7 @@ import {
 	Entity
 } from 'cesium';
 
-export const formatEventType = nameEvent => nameEvent.toLowerCase().replace(/(_[a-z])/g, $1 => $1.replace('_', ''));
+const formatEventType = nameEvent => nameEvent.toLowerCase().replace(/(_[a-z])/g, $1 => $1.replace('_', ''));
 
 /**
  * Array of objects

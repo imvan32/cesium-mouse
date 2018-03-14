@@ -12,7 +12,7 @@ module.exports = {
 		cesium: 'Cesium'
 	},
 	output: {
-		libraryTarget: 'window',
+		libraryTarget: 'umd',
 		library: 'CesiumMouse',
 	},
 	resolve: {
